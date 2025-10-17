@@ -23,10 +23,7 @@ export async function loader({
   const url = new URL(request.url);
 
   const [projectRes, postRes] = await Promise.all([
-    fetch(
-      `${
-        import.meta.env.VITE_API_URL
-      }/projects?filters[featured][$eq]=true&populate=*`
+    fetch(`${import.meta.env.VITE_API_URL}/projects?filters[featured][$eq]=true&populate=*`
     ),
     fetch(`${import.meta.env.VITE_API_URL}/posts?sort[0]=date:desc&populate=*`),
   ]);

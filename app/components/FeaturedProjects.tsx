@@ -7,6 +7,7 @@ type FeaturedProjectsProps = {
 };
 
 const FeaturedProjects = ({ projects, count = 4 }: FeaturedProjectsProps) => {
+  
   if (projects.length === 0) return null;
 
   return (
