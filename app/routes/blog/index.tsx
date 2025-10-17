@@ -4,15 +4,21 @@ import type { Post, StrapiResponse, StrapiProject, StrapiPost } from '~/types';
 import PostCard from '~/components/PostCard';
 import Pagination from '~/components/Pagination';
 import PostFilter from '~/components/PostFilter';
+import { URL } from 'node:url';
 
 export async function loader({
   request,
 }: Route.LoaderArgs): Promise<{ posts: Post[] }> {
-  const res = await fetch(
-    `${import.meta.env.VITE_API_URL}/posts?populate=image&sort=date:desc`
-  );
+  // const res = new URL('/posts-meta.json', request.url)
+  const res = await fetch(`${import.meta.env.VITE_API_URL}/posts?populate=image&sort=date:desc`);
 
   if (!res.ok) throw new Error('Failed to fetch data');
+
+  // const data = await res.json()
+
+  // data.sort((a: PostMeta, b: PostMeta) => {
+  //   return new Date(b.date).getTime() - new Date(b.date).getTime()
+  // })
 
   const json: StrapiResponse<StrapiPost> = await res.json();
 

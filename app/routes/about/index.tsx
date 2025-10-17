@@ -10,7 +10,7 @@ const AboutPage = () => {
         />
         <div>
           <h1 className='text-3xl font-bold text-white mb-2'>
-            Hey, I'm Brad 👋
+            Hey, I'm Willice
           </h1>
           <p className='text-gray-300 text-lg'>
             I'm a passionate web developer and content creator who loves
@@ -33,20 +33,19 @@ const AboutPage = () => {
       </div>
 
       {/* Tech Stack */}
-      <h2 className='text-2xl font-semibold text-white mb-4'>🚀 Tech I Use</h2>
+      <h2 className='text-2xl font-semibold text-white mb-4'>Tech I Use</h2>
       <ul className='flex flex-wrap gap-4 text-sm text-gray-300'>
         {[
           'React',
           'Next.js',
-          'Vue',
           'Tailwind CSS',
+          'Bootstrap',
+          'jquery',
+          'php',
           'Node.js',
           'Laravel',
-          'Prisma',
           'MongoDB',
-          'PostgreSQL',
-          'Appwrite',
-          'Docker',
+          'mysql',
         ].map((tech) => (
           <li key={tech} className='bg-gray-700 px-3 py-1 rounded-md'>
             {tech}
