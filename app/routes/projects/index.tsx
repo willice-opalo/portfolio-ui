@@ -32,6 +32,9 @@ export async function loader({
     featured: item.featured,
   }));
 
+  //on the image ${import.meta.env.VITE_STRAPI_URL}
+  //same applies to the details page
+  
   return { projects };
 }
 
