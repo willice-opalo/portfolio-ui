@@ -15,4 +15,3 @@ Start the development server with HMR:
 ```bash
 npm run dev
 ```
-```
