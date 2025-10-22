@@ -16,7 +16,7 @@ const Navbar = () => {
           className='flex items-center gap-2 text-lg font-bold text-blue-300'
         >
           <FaLaptopCode className='text-blue-400 text-xl' />
-          <span>The Friendly Developer</span>
+          <span></span>
         </NavLink>
 
         {/* Desktop Nav */}
@@ -34,12 +34,12 @@ const Navbar = () => {
             >
               Projects
             </NavLink>
-            <NavLink
+            {/* <NavLink
               className={({ isActive }) => (isActive ? active : base)}
               to='/blog'
             >
               Blog
-            </NavLink>
+            </NavLink> */}
             <NavLink
               className={({ isActive }) => (isActive ? active : base)}
               to='/about'
@@ -83,13 +83,13 @@ const Navbar = () => {
           >
             Projects
           </NavLink>
-          <NavLink
+          {/* <NavLink
             className={({ isActive }) => (isActive ? active : base)}
             to='/blog'
             onClick={() => setMenuOpen(false)}
           >
             Blog
-          </NavLink>
+          </NavLink> */}
           <NavLink
             className={({ isActive }) => (isActive ? active : base)}
             to='/about'
