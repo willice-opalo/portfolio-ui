@@ -67,7 +67,7 @@ const ProjectsPage = ({ loaderData }: Route.ComponentProps) => {
 
   return (
     <>
-      <h2 className='text-3xl text-white font-bold mb-8'>🚀 Projects</h2>
+      <h2 className='text-3xl text-white font-bold mb-8'>Projects</h2>
 
       <div className='flex flex-wrap gap-2 mb-8'>
         {categories.map((category) => (

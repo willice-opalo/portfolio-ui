@@ -4,7 +4,7 @@ const AboutPage = () => {
       {/* Intro */}
       <div className='flex flex-col md:flex-row md:items-start items-center gap-10 mb-12'>
         <img
-          src='/images/profile.jpg'
+          src='/images/profile(1).png'
           alt='profile'
           className='w-40 h-40 rounded-full object-cover border-4 border-blue-500 shadow-md'
         />
@@ -13,15 +13,13 @@ const AboutPage = () => {
             Hey, I'm Willice
           </h1>
           <p className='text-gray-300 text-lg'>
-            I'm a passionate web developer and content creator who loves
-            building friendly digital experiences and helping others grow into
-            confident, modern developers.
+            Passionate full-stack developer dedicated to creating impactful digital solutions for education and businesses.
           </p>
         </div>
       </div>
 
       {/* Bio Section */}
-      <div className='mb-12'>
+      {/* <div className='mb-12'>
         <h2 className='text-2xl font-semibold text-white mb-4'>My Mission</h2>
         <p className='text-gray-300 leading-relaxed'>
           After turning my life around, I made it my mission to share what I’ve
@@ -30,7 +28,7 @@ const AboutPage = () => {
           I aim to make development accessible, friendly, and something you look
           forward to each day.
         </p>
-      </div>
+      </div> */}
 
       {/* Tech Stack */}
       <h2 className='text-2xl font-semibold text-white mb-4'>Tech I Use</h2>
