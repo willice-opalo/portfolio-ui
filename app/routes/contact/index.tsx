@@ -32,6 +32,13 @@ import type { Route } from './+types';
 //   return { message: 'Form submitted successfully', data };
 // }
 
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: 'Willice Opalo | Contact' },
+    { name: 'description', content: 'Custom website development' },
+  ];
+}
+
 const ContactPage = ({ actionData }: Route.ComponentProps) => {
   // const errors = actionData?.errors || {}
   return (

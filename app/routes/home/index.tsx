@@ -12,7 +12,7 @@ import type { Post } from '~/types';
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'The Friendly Dev | Welcome' },
+    { title: 'Willice Opalo | Welcome' },
     { name: 'description', content: 'Custom website development' },
   ];
 }

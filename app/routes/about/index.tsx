@@ -1,3 +1,12 @@
+import type { Route } from "./+types";
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: 'Willice Opalo | About' },
+    { name: 'description', content: 'Custom website development' },
+  ];
+}
+
 const AboutPage = () => {
   return (
     <div className='max-w-5xl mx-auto px-6 py-16 bg-gray-900'>
