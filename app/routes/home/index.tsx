@@ -62,6 +62,7 @@ export async function loader({
 
 const HomePage = ({ loaderData }: Route.ComponentProps) => {
   const { projects, posts } = loaderData;
+  // console.log('object')
 
   return (
     <>
